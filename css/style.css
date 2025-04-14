@@ -398,3 +398,9 @@ body.playlist-page {
     color: #00f5d4;
     margin-bottom: 10px;
   }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  }
