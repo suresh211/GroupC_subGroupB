@@ -207,3 +207,102 @@ body.signin-body {
   background-size: cover;
   background-position: center;
 }
+
+/* Playlist Page */
+body.playlist-page {
+  overflow: hidden; /* prevents extra scroll */
+}
+
+.playlist-page .hero-section {
+  background: url('../images/1.jpg') no-repeat center center / cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Scrollable white floating box */
+.playlist-page .playlist-wrapper {
+  width: 95%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  margin-top: 120px;
+  height: calc(100vh - 140px); /* Fits inside the section */
+  overflow-y: auto;
+  padding: 30px 20px;
+  z-index: 2;
+}
+
+.playlist-page .search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-page .search-bar input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 90%;
+  max-width: 400px;
+}
+
+.playlist-page .music-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.playlist-page .song-card {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.playlist-page .song-card:hover {
+  transform: scale(1.01);
+  background: #fff;
+}
+
+.playlist-page .song-card.playing {
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.4);
+}
+
+.playlist-page .song-card p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.playlist-page .song-card audio {
+  width: 250px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.playlist-page .hero-content h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #00ff88; /* 💚 Bright green or your favorite */
+}
+
+.playlist-page .hero-content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: black; /* 🔆 Soft white for subtitle */
+}
