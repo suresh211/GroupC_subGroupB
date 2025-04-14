@@ -306,3 +306,95 @@ body.playlist-page {
   font-size: 1rem;
   color: black; /* 🔆 Soft white for subtitle */
 }
+
+
+.about-section {
+    position: relative;
+    z-index: 2;
+    padding: 60px 20px 120px;
+    color: white;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  /* Team Layout */
+  .team-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00ffc8;
+  }
+  
+  .team-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .team-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .profile-card {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .profile-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .profile-card h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #00ffc8;
+  }
+  
+  .profile-card p {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 180px; /* ⬅️ Increased from 100px to 180px */
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-card {
+    background-color: #1c1c1c;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .contact-card h3 {
+    color: #00f5d4;
+    margin-bottom: 10px;
+  }
