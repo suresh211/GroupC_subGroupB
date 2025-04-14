@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Playlist - Music Library</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body class="playlist-page">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🎵 Music Library</div>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="playlist.html" class="active">Playlist</a></li>
+      <li><a href="signin.html">Sign Out</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section with background image -->
+  <section class="hero-section">
+    <div class="overlay"></div>
+
+    <div class="playlist-wrapper">
+      <div class="hero-content">
+        <h1>Playlist</h1>
+        <p>Enjoy your favorite tracks anytime</p>
+      </div>
+
+      <!-- Search -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search your music...">
+      </div>
+
+      <!-- Music Container -->
+      <div class="music-container">
+        <div class="song-card"><p>🎧 Sugar</p><audio controls><source src="../music/sugar.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Adventure of a Lifetime</p><audio controls><source src="../music/Adventure Of A Lifetime.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Counting Stars</p><audio controls><source src="../music/Counting Stars.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Viva la Vida</p><audio controls><source src="../music/Viva La Vida.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 A Sky Full of Stars</p><audio controls><source src="../music/A Sky Full Of Stars.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Hymn for the Weekend</p><audio controls><source src="../music/Hymn For The Weekend.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Paradise</p><audio controls><source src="../music/Paradise.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Arcade</p><audio controls><source src="../music/Arcade.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Another Love</p><audio controls><source src="../music/Another Love.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Someone Like You</p><audio controls><source src="../music/Someone Like You.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Set Fire to the Rain</p><audio controls><source src="../music/Set Fire to the Rain.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Azizam</p><audio controls><source src="../music/Azizam.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Eastside</p><audio controls><source src="../music/Eastside.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Closer</p><audio controls><source src="../music/Closer.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 STAY</p><audio controls><source src="../music/STAY.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Wavin Flag</p><audio controls><source src="../music/Wavin Flag.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Ignite</p><audio controls><source src="../music/Ignite.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 Alone</p><audio controls><source src="../music/Alone.mp3" type="audio/mpeg"></audio></div>
+        <div class="song-card"><p>🎧 On My Way</p><audio controls><source src="../music/On My Way.mp3" type="audio/mpeg"></audio></div>
+      </div>
+      <div class="footer">
+        <p>&copy; 2025 Music Library. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- JavaScript -->
+  <script src="../js/script.js"></script>
 </body>
 </html>
